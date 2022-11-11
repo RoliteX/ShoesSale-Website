@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #062B39;
+    opacity: 0.97;
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    text-align: right;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.navbar-links ul li a:hover{
+    color: #E5CDA8;
+    transition: .5s;
+}
+
+.title{
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#img-b{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/ayakkabi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.body-text{
+    position: absolute;
+    top: 85%;
+    color: #fff;
+    margin-left: 20%;
+}
+
+.body-text p{
+    font-size: 45px;
+}
+
+.icons{
+    position: absolute;
+    bottom: 17rem;
+}
+
+.icons ul li{
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.icons ul li i{
+    width: 20px;
+    height: 20px;
+}
+
+.icons ul li a{
+    color: #fff;
+    text-align: center;
+    padding: 8px 6px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icons ul li a:hover{
+    color: #DDCA9F;
+    transition: all .5s;
+}
+
+/* portfolio */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: #DDCA9F;
+    color: #062B39;
+    align-items: center;
+    padding: 20px;
+}
+
+#portfolio span{
+    color: #062B39;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.gallery img{
+    width: 430px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* contact */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: #062B39;
+    height: 80vh;
+    padding: 20px;
+}
+
+#contact span{
+    color: #DDCA9F;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+#contact .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: #062B39;
+    height: 80vh;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+#contact input{
+    width: 30%;
+    margin-left: 35.6%;
+    border-color: #DDCA9F;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+#contact textarea{
+    width: 15%;
+    margin-left: 43%;
+    padding: 8px;
+    height: 12rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+#contact button{
+    width: 10%;
+    margin-left: 45.5%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: all .5s;
+}
+
+#contact button:hover{
+    transition: all .5s;
+    cursor: pointer;
+    box-shadow: 0 0 13px #fff;
+}
+
+/* about us */
+
+#about-us{
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #DDCA9F;
+}
+
+#about-us span{
+    text-align: center;
+    color: #062B39;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.about-text p{
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #062B39;
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    background-color: #062B39;
+    width: 100%;
+}
+
+.copyright{
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+
+@media screen and (max-width: 992px){
+
+    .nav-main ul li a{
+        font-size: 16px;
+    }
+
+    .gallery img{
+        width: 400px;
+    }
+
+    .body-text{
+        margin-left: 13%;
+    }
+
+    .body-text p{
+        font-size: 26px;
+    }
+
+    #contact input{
+        width: 45%;
+        margin-left: 26.6%;
+        margin-bottom: 20px;
+    }
+
+    #contact textarea{
+        width: 40%;
+        margin-left: 29.6%;
+        margin-bottom: 30px;
+    }
+
+    #contact button{
+        width: 20%;
+        margin-left: 39.5%;
+    }
+
+    #about-us{
+        height: 50vh;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .body-text p{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .title{
+        font-size: 20px;
+        margin-left: 2rem;
+    }
+
+    #contact{
+        height: 90vh;
+    }
+
+    #contact input{
+        width: 55%;
+        margin-left: 23.6%;
+        margin-bottom: 20px;
+    }
+
+    #contact textarea{
+        width: 50%;
+        margin-left: 26.6%;
+        margin-bottom: 30px;
+    }
+
+    #about-us{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .nav-main{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-main ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .active{
+        display: flex;
+    }
+
+    .gallery img{
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+ 
+    .body-text p{
+        font-size: 20px;
+        margin-left: -30px;
+    }
+
+    #portfolio span{
+        text-align: center;
+    }
+
+    #contact input{
+        width: 75%;
+        margin-left: 12.6%;
+    }
+
+    #contact textarea{
+        width: 65%;
+        margin-left: 17.6%;
+    }
+
+    #contact button{
+        width: 40%;
+        margin-left: 30.5%;
+    }
+
+    #about-us{
+        height: 90vh;
+    }
+
+}
+
+@media screen and (max-width:320px){
+    
+    .gallery img{
+        width: 200px;
+    }
+
+    #about-us{
+        height: 100vh;
+    }
+
+}
